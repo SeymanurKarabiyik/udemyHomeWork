@@ -1,0 +1,477 @@
+<html>
+
+<head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img style="height: 40; width: 90;"
+                    src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Development</a></li>
+                            <li><a class="dropdown-item" href="#">Business</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search for anything"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Udemy Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Teach on Udemy</a>
+                    </li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+                    <button type="button" class="btn btn-primary">Log In</button>
+                    <button type="button" class="btn btn-secondary">Sign Up</button>
+                    <button type="button" class="btn btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                            <path
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+                        </svg></button>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="p-5 mb-4 bg-light rounded-3">
+
+        <div class="col">
+
+            </form>
+
+            <div style="background-image:url('udemy1.jpg'); height: 400px; ">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Sale extended</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Courses as low as ₺27.99 ends tonight! One extra day
+                            for skills that stretch.</h6>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="What do you want to learn?"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg></button>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="#">Python</a>
+                            <a class="nav-link" href="#">Excel</a>
+                            <a class="nav-link" href="#">Web Development</a>
+                            <a class="nav-link" href="#">JavaScript</a>
+                            <a class="nav-link" href="#">Data Science</a>
+                            <a class="nav-link" href="#">AWC Certification </a>
+                            <a class="nav-link" href="#">Drawing </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div>
+                <h1 style="font-size: 20;">Expand your career opportunities with Python</h1>
+                <h2 style="font-size: 16;">Whether you work in machine learning or finance, or are pursuing a career in
+                    web development or data science, Python is one of the most important skills you can learn. Python's
+                    simple syntax is especially suited for desktop, web, and business applications. Python's design
+                    philosophy emphasizes readability and usability.</h2>
+                <button type="button" class="btn btn-primary">Explore Python</button>
+            </div>
+            <div class="d-flex justify-content-between mb-3" style="border: solid 1px black;">
+                <div class="card md-4" style="width: 18rem;">
+                    <img src="https://img-c.udemycdn.com/course/240x135/567828_67d0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">2021 Complete Python Bootcamp From Zero To Hero In </h5>
+                        <p1 class="card-text">Jose Portilla</p1> <br>
+                        <p2 class="card-text">27,99</p2>
+
+                    </div>
+                </div>
+                <div class="card md-6" style="width: 18rem;">
+                    <img src="https://img-c.udemycdn.com/course/240x135/950390_270f_3.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Machine Learning A-Z™: Hands-On Python & R In Data Science </h5>
+                        <p1 class="card-text">Kirill Eremenko,Hadeli de Ponteves</p1> <br>
+                        <p2 class="card-text">27,99</p2>
+
+                    </div>
+                </div>
+                <div class="card md-8" style="width: 18rem; ">
+                    <img src="https://img-c.udemycdn.com/course/240x135/903744_8eb2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Python for Data Science and Machine Learning Bootcamp</h5>
+                        <p1 class="card-text">Jose Portilla</p1> <br>
+                        <p2 class="card-text">27,99</p2>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div></div>
+            <nav>
+                <div class="d-flex justify-content-between mb-3" style="background-color:lightgray;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path
+                            d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                    </svg>
+                    <p>Learn in-demand skills with over 155,000 video courses</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path
+                            d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                    </svg>
+                    <p>Choose courses taught by real-world experts</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-link" viewBox="0 0 16 16">
+                        <path
+                            d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
+                        <path
+                            d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
+                    </svg>
+                    <p>Learn at your own pace, with lifetime access on mobile and desktop</p>
+                </div>
+            </nav>
+
+
+            <div>
+                <h4>Students are viewing</h4>
+                <div class="d-flex justify-content-between mb-3" style="border: solid 1px black;">
+                    <div class="card md-4" style="width: 18rem;">
+                        <img src="https://img-c.udemycdn.com/course/240x135/793796_0e89.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Microsoft Excel - Excel from Beginner to Advanced </h5>
+                            <p1 class="card-text">Kyle Pew</p1> <br>
+                            <p2 class="card-text">27,99</p2>
+
+                        </div>
+                    </div>
+                    <div class="card md-6" style="width: 18rem;">
+                        <img src="https://img-c.udemycdn.com/course/240x135/914296_3670_8.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">The Complete Digital Marketing Course - 12 Courses in 1 </h5>
+                            <p1 class="card-text">Rob Percival Daragh Walsh</p1> <br>
+                            <p2 class="card-text">27,99</p2>
+
+                        </div>
+                    </div>
+                    <div class="card md-8" style="width: 18rem; ">
+                        <img src="https://img-c.udemycdn.com/course/240x135/1917546_682b_3.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Master the Coding Interview: Data Structures + Algorithms/h5>
+                                <p1 class="card-text">Andrei Neagoie</p1> <br>
+                                <p2 class="card-text">27,99</p2>
+
+                        </div>
+                    </div>
+                    <div class="card md-8" style="width: 18rem; ">
+                        <img src="https://img-c.udemycdn.com/course/240x135/1793828_7999.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Docker and Kubernetes: The Complete Guide</h5>
+                            <p1 class="card-text">Stephen Grider</p1> <br>
+                            <p2 class="card-text">27,99</p2>
+
+                        </div>
+                    </div>
+                    <div class="card md-8" style="width: 18rem; ">
+                        <img src="https://img-c.udemycdn.com/course/240x135/1570206_26c6_5.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Microsoft Power BI Desktop for Business Intelligence</h5>
+                            <p1 class="card-text">Maven Analytics</p1> <br>
+                            <p2 class="card-text">27,99</p2>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="album py-5 bg-light">
+                    <div class="container">
+
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg"
+                                        alt="">
+
+                                    <div class="card-body">
+                                        <p class="card-text">Design</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg"
+                                        alt="">
+
+                                    <div class="card-body">
+                                        <p class="card-text">Development</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="https://s.udemycdn.com/home/top-categories/lohp-category-marketing-v2.jpg"
+                                        alt="">
+
+                                    <div class="card-body">
+                                        <p class="card-text">Marketing</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-v2.jpg"
+                                        alt="">
+
+                                    <div class="card-body">
+                                        <p class="card-text">IT and SoftWare</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="https://s.udemycdn.com/home/top-categories/lohp-category-personal-development-v2.jpg"
+                                        alt="">
+
+                                    <div class="card-body">
+                                        <p class="card-text">Personal Development</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="https://s.udemycdn.com/home/top-categories/lohp-category-business-v2.jpg"
+                                        alt="">
+
+                                    <div class="card-body">
+                                        <p class="card-text">Business</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="https://s.udemycdn.com/home/top-categories/lohp-category-photography-v2.jpg"
+                                        alt="">
+
+                                    <div class="card-body">
+                                        <p class="card-text">Photography</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="https://s.udemycdn.com/home/top-categories/lohp-category-music-v2.jpg"
+                                        alt="">
+
+                                    <div class="card-body">
+                                        <p class="card-text">Music</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container marketing" style="background-color: lightgray;">
+                <div class="row">
+                    <h3>Featured topics by category</h3>
+                    <div class="col-lg-3">
+                        <h4>Development</h4>
+                        <a class="nav-link" href="#">Python</a>
+                        <p>30,211,530 students</p>
+                        <a class="nav-link" href="#">Excel</a>
+                        <p>9,723,010 students</p>
+                        <a class="nav-link" href="#">Web Development</a>
+                        <p>6,046,695 students</p>
+                        <p><a class="btn btn-secondary" href="#">Explore more topics &raquo;</a></p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4>Business</h4>
+                        <a class="nav-link" href="#">Financial Analysis</a>
+                        <p>1,096,103 students</p>
+                        <a class="nav-link" href="#">SQL</a>
+                        <p>4,552,986 students</p>
+                        <a class="nav-link" href="#">PMP</a>
+                        <p>1,410,209 students</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4>IT and Software</h4>
+                        <a class="nav-link" href="#">AWS Certification</a>
+                        <p>4,531,439 students</p>
+                        <a class="nav-link" href="#">Ethical Hacking</a>
+                        <p>9,254,404 students</p>
+                        <a class="nav-link" href="#">Cyber Security</a>
+                        <p>3,319,784 students</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4>Design</h4>
+                        <a class="nav-link" href="#">Photoshop</a>
+                        <p>9,831,311 students</p>
+                        <a class="nav-link" href="#">Graphic Design</a>
+                        <p>2,884,446 students</p>
+                        <a class="nav-link" href="#">Drawing</a>
+                        <p>2,211,051 students</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="https://s.udemycdn.com/home/non-student-cta/instructor-1x-v3.jpg"
+            style="height: 400px; width: 400px;">
+        <h2>Become an instructor</h2>
+        <h6>Instructors from around the world teach millions of students on Udemy. We provide the tools and skills to
+            teach what you love.</h6>
+        <p><a class="btn btn-secondary" href="#">Start teaching today &raquo;</a></p>
+    </div>
+    </div>
+    </div>
+    <nav>
+        <div>
+            <h5> Trusted by companies of all sizes </h5>
+        </div>
+        <div class="d-flex justify-content-between mb-3" style="background-color:lightgray;">
+            <img src="https://s.udemycdn.com/partner-logos/v4/apple-dark.svg" alt="">
+            <img src="https://s.udemycdn.com/partner-logos/v4/box-dark.svg" alt="">
+            <img src="https://s.udemycdn.com/partner-logos/v4/volkswagen-dark.svg" alt="">
+            <img src="https://s.udemycdn.com/partner-logos/v4/netflix-dark.svg" alt="">
+            <img src="https://s.udemycdn.com/partner-logos/v4/eventbrite-dark.svg" alt="">
+        </div>
+    </nav>
+    <div>
+        <img src="https://s.udemycdn.com/home/non-student-cta/ub-1x-v3.jpg" style="height: 400px; width: 400px;">
+        <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-ub.svg" style="width: 200px; height: 400px;">
+        <h6>Get unlimited access to 6,000+ of Udemy’s top courses for your team. Learn and improve skills across
+            business, tech, design, and more.</h6>
+        <p><a class="btn btn-secondary" href="#">Get Udemy Business &raquo;</a></p>
+    </div>
+    <div>
+        <img src="https://s.udemycdn.com/home/non-student-cta/transform-1x-v3.jpg" style="height: 400px; width: 400px;">
+
+        <h5>Transform your life through education</h5>
+        <h6>Learners around the world are launching new careers, advancing in their fields, and enriching their lives.
+        </h6>
+        <p><a class="btn btn-secondary" href="#">Find out how &raquo;</a></p>
+    </div>
+
+
+</body>
+
+<footer>
+
+
+    <div class="container">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-2">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Udemy Business</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Teach on Udemy</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Get the app</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About us</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-2">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Careers</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Blog</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Help and Support</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Affiliate</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-2">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy policy</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sİtemap</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-4 offset-1">
+                    <form>
+                        <p><a class="btn btn-secondary" href="#">English &raquo;</a></p>
+                        
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between py-4 my-4 border-top">
+                <p>&copy; 2021 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#twitter" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#instagram" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#facebook" />
+                            </svg></a></li>
+                </ul>
+            </div>
+
+        </footer>
+
+</html>
